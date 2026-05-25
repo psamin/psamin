@@ -6,10 +6,6 @@
 
 Now: building applied AI systems across education, agriculture, healthcare, and workflow automation.
 
-[![Email](https://img.shields.io/badge/Email-Contact-blue?style=flat&logo=gmail)](mailto:praneeths14209@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/praneeth-samineni-745902339)
-[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?style=flat&logo=github)](https://github.com/psamin)
-
 </div>
 
 ---
@@ -18,9 +14,9 @@ Now: building applied AI systems across education, agriculture, healthcare, and 
 
 - 🧠 **Builder:** I build full-stack AI products that turn messy real-world problems into usable software  
 - 🚀 **Startup-focused:** Interested in applied AI systems, LLM workflows, and fast-moving technical product teams  
-- 🌱 **CropAI:** Built an AI crop monitoring platform with CNN-based image analysis, dashboards, and LLM-generated plant health reports  
-- 🗣️ **Tamil Lens:** Built an AI language learning app using vision, translation, flashcards, quizzes, and streak tracking  
-- 🎯 **Current Focus:** React, Flask, Python, computer vision, LLM workflows, dashboards, and reliable AI product systems  
+- 🔬 **Research direction:** Working toward becoming a research engineer who can experiment with models, build ML systems, and turn research ideas into usable products  
+- 🤖 **Current Focus:** Experimenting with computer vision, LLM workflows, model evaluation, AI agents, backend systems, and dashboards for real-world AI applications  
+- 🎯 **Goal:** Build reliable AI systems that go beyond demos by connecting models, data, product design, and user workflows  
 
 ---
 
@@ -61,7 +57,7 @@ AI crop monitoring platform that helps farmers detect plant disease, nutrient de
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI language learning app where users scan real-world objects and receive translations, transliterations, audio, flashcards, quizzes, achievements, and streak tracking.
+AI language learning app that makes Tamil learning more interactive by letting users scan real-world objects and receive translations, transliterations, audio, flashcards, quizzes, achievements, and streak tracking. I’m partnering with local Tamil schools to explore how the app can make vocabulary practice more engaging for students.
 
 **Tech Stack:** Next.js · React · Flask · Gemini Vision · SQLAlchemy · JWT Auth · Tailwind
 
@@ -77,6 +73,7 @@ AI language learning app where users scan real-world objects and receive transla
 - Flashcards and quizzes  
 - Streak tracking  
 - Stats and achievements  
+- Designed for classroom and at-home practice  
 
 </details>
 
