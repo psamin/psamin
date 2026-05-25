@@ -14,9 +14,7 @@ Now: building applied AI systems across education, agriculture, healthcare, and 
 
 - 🧠 **Builder:** I build full-stack AI products that turn messy real-world problems into usable software  
 - 🚀 **Startup-focused:** Interested in applied AI systems, LLM workflows, and fast-moving technical product teams  
-- 🔬 **Research direction:** Working toward becoming a research engineer who can experiment with models, build ML systems, and turn research ideas into usable products  
-- 🤖 **Current Focus:** Experimenting with computer vision, LLM workflows, model evaluation, AI agents, backend systems, and dashboards for real-world AI applications  
-- 🎯 **Goal:** Build reliable AI systems that go beyond demos by connecting models, data, product design, and user workflows  
+- 🔬 **Current Focus:** Working toward becoming a research engineer by experimenting with computer vision, LLM workflows, model evaluation, AI agents, backend systems, and dashboards for real-world AI applications  
 
 ---
 
