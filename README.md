@@ -38,7 +38,7 @@ AI crop monitoring platform that helps farmers detect plant disease, nutrient de
 - Reached **86% CNN accuracy** after model tuning
 - Combined image classification with an LLM workflow to generate personalized plant health reports
 - Placed **2nd Internationally** at TSA Software Development
-- Earned a **$10,000 investment offer**
+- Turned down a **$10,000 investment offer**
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/crop2.0)
@@ -92,6 +92,9 @@ Official website for a local IT company, built to present services, improve cred
 
 **Impact:** Helped present services to **20+ clients**
 
+**Links:**
+- 🌐 [Website](https://fiskeritinc.com)
+
 <details>
 <summary><strong>What I Built</strong></summary>
 
@@ -109,11 +112,14 @@ Official website for a local IT company, built to present services, improve cred
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
-Website for a nonprofit initiative focused on expanding access to coding education through workshops, lessons, and student-led programming.
+Website for **Coding for a Change**, my 501(c)(3) nonprofit focused on expanding access to coding education through workshops, lessons, and student-led programming.
 
 **Tech Stack:** React · Tailwind · JavaScript
 
-**Impact:** Supported a student-led coding education nonprofit with outreach and program visibility.
+**Impact:** Supported my nonprofit’s outreach, workshop visibility, and student-facing coding education programs.
+
+**Links:**
+- 🌐 [Website](https://codingforachangenpo.org)
 
 <details>
 <summary><strong>What I Built</strong></summary>
@@ -169,12 +175,6 @@ Website for a nonprofit initiative focused on expanding access to coding educati
 </td>
 </tr>
 </table>
-
----
-
-## 📌 What I'm Building Toward
-
-I want to become a strong AI engineer who can build reliable systems, not just demos. I’m especially interested in applied AI products that turn unstructured information into structured workflows, dashboards, summaries, recommendations, and useful actions.
 
 ---
 
