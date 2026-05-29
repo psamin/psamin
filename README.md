@@ -77,7 +77,39 @@ AI language learning app that makes Tamil learning more interactive by letting u
 
 ---
 
-### 3. Fisker IT Website  
+### 3. Med-Legal Intake Dashboard  
+![status](https://img.shields.io/badge/status-in_progress-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+AI-powered med-legal intake dashboard that turns raw intake notes into structured case data, missing-information checks, follow-up tasks, and dashboard metrics while keeping a human in the loop through editable fields before anything is saved.
+
+**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic
+
+**Highlights:**
+- Built a Flask backend that handles prompt construction, Claude API calls, schema validation, and error handling
+- Used Pydantic schemas so missing fields return as `null` instead of being hallucinated
+- Created an editable dashboard for reviewing extracted case summaries, missing fields, follow-up tasks, and completeness metrics
+- Added voice intake support using the browser Web Speech API
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/waycoReplica)
+
+<details>
+<summary><strong>Key Features</strong></summary>
+
+- Raw intake notes to structured case data  
+- Missing information detection  
+- Follow-up task generation  
+- Completeness score and dashboard metrics  
+- Editable human-review fields before saving  
+- Voice-to-text intake support  
+- Backend-controlled Claude workflow with schema validation  
+
+</details>
+
+---
+
+### 4. Fisker IT Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -103,7 +135,7 @@ Official website for a local IT company, built to present services, improve cred
 
 ---
 
-### 4. Coding for a Change Website  
+### 5. Coding for a Change Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -163,6 +195,7 @@ Website for **Coding for a Change**, my 501(c)(3) nonprofit focused on expanding
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-d97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285f4?style=for-the-badge&logo=google&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
