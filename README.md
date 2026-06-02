@@ -77,33 +77,33 @@ AI language learning app that makes Tamil learning more interactive by letting u
 
 ---
 
-### 3. Med-Legal Intake Dashboard  
+### 3. MedBill  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI-powered med-legal intake dashboard that turns raw intake notes into structured case data, missing-information checks, follow-up tasks, and dashboard metrics while keeping a human in the loop through editable fields before anything is saved.
+AI-powered medical bill analysis platform that helps users upload messy medical bills, extract charges and billing details, review line items, and understand potential issues through a cleaner dashboard workflow.
 
-**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic
+**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic · GCP
 
 **Highlights:**
-- Built a Flask backend that handles prompt construction, Claude API calls, schema validation, and error handling
-- Used Pydantic schemas so missing fields return as `null` instead of being hallucinated
-- Created an editable dashboard for reviewing extracted case summaries, missing fields, follow-up tasks, and completeness metrics
-- Added voice intake support using the browser Web Speech API
+- Built a bill-processing workflow that extracts structured billing data from uploaded medical bill documents
+- Designed a dashboard for reviewing charges, totals, billing details, and extracted results in a human-readable format
+- Improved the extraction flow to handle messy bill layouts while keeping token usage efficient
+- Deployed the project with cloud infrastructure and a separate frontend/backend setup
 
 **Links:**
-- 🔗 [Repo](https://github.com/psamin/waycoReplica)
+- 🔗 [Repo](https://github.com/psamin/medbill)
 
 <details>
 <summary><strong>Key Features</strong></summary>
 
-- Raw intake notes to structured case data  
-- Missing information detection  
-- Follow-up task generation  
-- Completeness score and dashboard metrics  
-- Editable human-review fields before saving  
-- Voice-to-text intake support  
-- Backend-controlled Claude workflow with schema validation  
+- Medical bill upload and processing  
+- Line-item and total charge extraction  
+- Dashboard-based review workflow  
+- Structured JSON output from AI parsing  
+- Human-readable billing summaries  
+- Frontend/backend deployment setup  
+- Error handling for inconsistent bill formats  
 
 </details>
 
