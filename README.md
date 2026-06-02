@@ -81,13 +81,15 @@ AI language learning app that makes Tamil learning more interactive by letting u
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI-powered medical bill analysis platform that helps users upload messy medical bills, extract charges and billing details, review line items, and understand potential issues through a cleaner dashboard workflow.
+AI-powered medical bill coordination platform for law firms, medical providers, and funders. The platform helps teams upload messy medical bills, extract billing details, compare charges against CMS/Medicare reference data, and coordinate case-related billing workflows through a shared dashboard.
 
-**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic · GCP
+**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic · CMS API · Medicare Data · GCP
 
 **Highlights:**
 - Built a bill-processing workflow that extracts structured billing data from uploaded medical bill documents
-- Designed a dashboard for reviewing charges, totals, billing details, and extracted results in a human-readable format
+- Integrated CMS/Medicare pricing context to help compare billed charges against public reimbursement data
+- Designed role-aware coordination flows for law firms, funders, and providers so each group can review the cases, bills, and details relevant to them
+- Created dashboard views for charges, totals, bill status, extracted results, and potential billing issues
 - Improved the extraction flow to handle messy bill layouts while keeping token usage efficient
 - Deployed the project with cloud infrastructure and a separate frontend/backend setup
 
@@ -99,7 +101,10 @@ AI-powered medical bill analysis platform that helps users upload messy medical 
 
 - Medical bill upload and processing  
 - Line-item and total charge extraction  
-- Dashboard-based review workflow  
+- CMS API / Medicare reference data integration  
+- Charge comparison and reimbursement context  
+- Shared coordination workflow for law firms, providers, and funders  
+- Role-based dashboard organization  
 - Structured JSON output from AI parsing  
 - Human-readable billing summaries  
 - Frontend/backend deployment setup  
