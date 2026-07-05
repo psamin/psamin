@@ -47,15 +47,14 @@ AI crop-monitoring platform: detect plant disease, nutrient, and hydration issue
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-A GPT-style language model built from scratch in JAX, implemented after working through *Attention Is All You Need* and DeepMind's compute-optimal scaling laws (Chinchilla). It learns to predict the next character in text.
+A GPT-style language model built from scratch in JAX, implemented after working through *Attention Is All You Need* and DeepMind's scaling laws(Chinchilla). It learns to predict the next character in text. I'm building another one to perform simple arithmetic operations soon.
 
 **Tech Stack:** JAX · optax · NumPy · Python
 
 **Highlights:**
 - Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
-- Built the decoder-only architecture straight from the transformer paper: embeddings, attention, feed-forward, residuals, and layer norm
+- Built the decoder-only architecture: embeddings, attention, feed-forward, residuals, and layer norm
 - Fully functional params with a next-token cross-entropy training loop using `jax.jit` / `jax.grad` / `optax`
-- Runs on CPU and picks up a GPU/TPU automatically with no code change
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/jax-transformer)
