@@ -2,9 +2,9 @@
 
 # hey, i'm praneeth
 
-**incoming Georgia Tech CS + Math student building full-stack AI products**
+**incoming Georgia Tech CS + EE student building AI infrastructure**
 
-Now: building applied AI systems across education, agriculture, healthcare, and workflow automation.
+Focused on AI infra and the inference side: driving the cost of compute toward zero and making LLMs as scalable as possible.
 
 </div>
 
@@ -12,50 +12,19 @@ Now: building applied AI systems across education, agriculture, healthcare, and 
 
 ## 👨‍💻 About Me
 
-- 🧠 **Builder:** I build full-stack AI products that turn messy real-world problems into usable software  
-- 🚀 **Startup-focused:** Interested in applied AI systems, LLM workflows, and fast-moving technical product teams  
-- 🔬 **Current Focus:** Working toward becoming a research engineer by experimenting with computer vision, LLM workflows, model evaluation, AI agents, backend systems, and dashboards for real-world AI applications  
+- 🧠 **Builder:** I build AI systems and the infrastructure that runs them — from model internals up to production
+- ⚡ **AI Infra:** Most interested in the inference side — serving, throughput, and efficiency — pushing the cost of compute toward zero and making LLMs as scalable as possible
+- 🔬 **Research engineering:** Working toward a research-engineering role at the intersection of ML systems and infrastructure — transformers, inference optimization, evaluation, and backend systems
 
 ---
 
 ## 🚀 Featured Projects
 
-### 1. JAX Transformer  
+### 1. CropAI  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-A decoder-only (GPT-style) transformer written **from scratch in pure JAX** — no Flax or Haiku. The parameters are a plain pytree and every layer is spelled out (token + positional embeddings, causal multi-head self-attention, GELU MLP, pre-norm residual blocks, LM head), so the whole model reads in ~180 lines. Trains a character-level language model out of the box.
-
-**Tech Stack:** JAX · optax · NumPy · Python
-
-**Highlights:**
-- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
-- Fully functional params with `jax.jit` / `jax.grad` / `optax` — no neural-net framework hiding the math
-- Runs on CPU out of the box and picks up a GPU/TPU automatically with no code change
-
-**Links:**
-- 🔗 [Repo](https://github.com/psamin/jax-transformer)
-
-<details>
-<summary><strong>What I Built</strong></summary>
-
-- Token + positional embeddings  
-- Causal multi-head self-attention (batched, single `einsum`)  
-- GELU feed-forward MLP  
-- Pre-norm residual transformer blocks  
-- Next-token cross-entropy training loop (AdamW via optax)  
-- Character-level tokenizer + a small built-in corpus  
-- Autoregressive text generation with temperature and top-k  
-
-</details>
-
----
-
-### 2. CropAI  
-![status](https://img.shields.io/badge/status-finished-blue)
-![visibility](https://img.shields.io/badge/visibility-public-blue)
-
-AI crop monitoring platform that helps farmers detect plant disease, nutrient deficiency, and hydration issues from images, then track plant health, finances, and farm operations through dashboards.
+AI crop-monitoring platform: detect plant disease, nutrient, and hydration issues from images, with dashboards for plant health, finances, and farm operations.
 
 **Tech Stack:** React · Flask · Python · TensorFlow · CNNs · LLM Workflows · Tailwind
 
@@ -82,11 +51,11 @@ AI crop monitoring platform that helps farmers detect plant disease, nutrient de
 
 ---
 
-### 3. Tamil Lens  
+### 2. Tamil Lens  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI language learning app that makes Tamil learning more interactive by letting users scan real-world objects and receive translations, transliterations, audio, flashcards, quizzes, achievements, and streak tracking. I’m partnering with local Tamil schools to explore how the app can make vocabulary practice more engaging for students.
+AI language-learning app: scan real-world objects for Tamil translations, transliterations, audio, flashcards, and quizzes. Piloting with local Tamil schools.
 
 **Tech Stack:** Next.js · React · Flask · Gemini Vision · SQLAlchemy · JWT Auth · Tailwind
 
@@ -108,11 +77,11 @@ AI language learning app that makes Tamil learning more interactive by letting u
 
 ---
 
-### 4. MedBill  
+### 3. MedBill  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI-powered medical bill coordination platform for law firms, medical providers, and funders. The platform helps teams upload messy medical bills, extract billing details, compare charges against CMS/Medicare reference data, and coordinate case-related billing workflows through a shared dashboard.
+AI medical-bill coordination platform for law firms, providers, and funders: extract billing details, compare charges against CMS/Medicare data, and coordinate cases in a shared dashboard.
 
 **Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic · CMS API · Medicare Data · GCP
 
@@ -145,11 +114,11 @@ AI-powered medical bill coordination platform for law firms, medical providers, 
 
 ---
 
-### 5. Fisker IT Website  
+### 4. Fisker IT Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
-Official website for a local IT company, built to present services, improve credibility, and support client outreach.
+Official website for a local IT company — services, credibility, and client outreach.
 
 **Tech Stack:** React · TypeScript · Tailwind · Flask · Vite
 
@@ -171,11 +140,11 @@ Official website for a local IT company, built to present services, improve cred
 
 ---
 
-### 6. Coding for a Change Website  
+### 5. Coding for a Change Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
-Website for **Coding for a Change**, my 501(c)(3) nonprofit focused on expanding access to coding education through workshops, lessons, and student-led programming.
+Website for my 501(c)(3) nonprofit expanding access to coding education through workshops and student-led programs.
 
 **Tech Stack:** React · Tailwind · JavaScript
 
@@ -197,11 +166,42 @@ Website for **Coding for a Change**, my 501(c)(3) nonprofit focused on expanding
 
 ---
 
+### 6. JAX Transformer  
+![status](https://img.shields.io/badge/status-finished-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+A decoder-only (GPT-style) transformer built **from scratch in pure JAX** — no Flax/Haiku. Every layer spelled out in ~180 lines; trains a char-level LM out of the box.
+
+**Tech Stack:** JAX · optax · NumPy · Python
+
+**Highlights:**
+- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
+- Fully functional params with `jax.jit` / `jax.grad` / `optax` — no neural-net framework hiding the math
+- Runs on CPU and picks up a GPU/TPU automatically with no code change
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/jax-transformer)
+
+<details>
+<summary><strong>What I Built</strong></summary>
+
+- Token + positional embeddings  
+- Causal multi-head self-attention (batched, single `einsum`)  
+- GELU feed-forward MLP  
+- Pre-norm residual transformer blocks  
+- Next-token cross-entropy training loop (AdamW via optax)  
+- Character-level tokenizer + a small built-in corpus  
+- Autoregressive text generation with temperature and top-k  
+
+</details>
+
+---
+
 ### 7. Tasks  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-A simple, personal way to map out my goals throughout the day — designed exactly how I like to work. A lightweight daily planner built around my own workflow, so planning takes seconds and then gets out of the way.
+A lightweight daily planner for mapping out my goals — built around my own workflow.
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/tasks)
@@ -212,7 +212,7 @@ A simple, personal way to map out my goals throughout the day — designed exact
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-Turn unfinished ideas and repositories into industry-ready projects — taking a rough idea or an abandoned codebase and pushing it the last mile to something clean, documented, and ready to show.
+Turn unfinished ideas and repos into industry-ready projects — polish, docs, and structure to launch-ready.
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/RepoLaunch)
@@ -252,6 +252,7 @@ Turn unfinished ideas and repositories into industry-ready projects — taking a
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white)
+![JAX](https://img.shields.io/badge/JAX-4c00b0?style=for-the-badge&logo=google&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-d97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285f4?style=for-the-badge&logo=google&logoColor=white)
