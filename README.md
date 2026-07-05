@@ -20,7 +20,38 @@ Now: building applied AI systems across education, agriculture, healthcare, and 
 
 ## 🚀 Featured Projects
 
-### 1. CropAI  
+### 1. JAX Transformer  
+![status](https://img.shields.io/badge/status-finished-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+A decoder-only (GPT-style) transformer written **from scratch in pure JAX** — no Flax or Haiku. The parameters are a plain pytree and every layer is spelled out (token + positional embeddings, causal multi-head self-attention, GELU MLP, pre-norm residual blocks, LM head), so the whole model reads in ~180 lines. Trains a character-level language model out of the box.
+
+**Tech Stack:** JAX · optax · NumPy · Python
+
+**Highlights:**
+- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
+- Fully functional params with `jax.jit` / `jax.grad` / `optax` — no neural-net framework hiding the math
+- Runs on CPU out of the box and picks up a GPU/TPU automatically with no code change
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/jax-transformer)
+
+<details>
+<summary><strong>What I Built</strong></summary>
+
+- Token + positional embeddings  
+- Causal multi-head self-attention (batched, single `einsum`)  
+- GELU feed-forward MLP  
+- Pre-norm residual transformer blocks  
+- Next-token cross-entropy training loop (AdamW via optax)  
+- Character-level tokenizer + a small built-in corpus  
+- Autoregressive text generation with temperature and top-k  
+
+</details>
+
+---
+
+### 2. CropAI  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
@@ -51,7 +82,7 @@ AI crop monitoring platform that helps farmers detect plant disease, nutrient de
 
 ---
 
-### 2. Tamil Lens  
+### 3. Tamil Lens  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
@@ -77,7 +108,7 @@ AI language learning app that makes Tamil learning more interactive by letting u
 
 ---
 
-### 3. MedBill  
+### 4. MedBill  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
@@ -114,7 +145,7 @@ AI-powered medical bill coordination platform for law firms, medical providers, 
 
 ---
 
-### 4. Fisker IT Website  
+### 5. Fisker IT Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -140,7 +171,7 @@ Official website for a local IT company, built to present services, improve cred
 
 ---
 
-### 5. Coding for a Change Website  
+### 6. Coding for a Change Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -163,6 +194,28 @@ Website for **Coding for a Change**, my 501(c)(3) nonprofit focused on expanding
 - Outreach-focused layout  
 
 </details>
+
+---
+
+### 7. Tasks  
+![status](https://img.shields.io/badge/status-in_progress-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+A simple, personal way to map out my goals throughout the day — designed exactly how I like to work. A lightweight daily planner built around my own workflow, so planning takes seconds and then gets out of the way.
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/tasks)
+
+---
+
+### 8. RepoLaunch  
+![status](https://img.shields.io/badge/status-in_progress-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+Turn unfinished ideas and repositories into industry-ready projects — taking a rough idea or an abandoned codebase and pushing it the last mile to something clean, documented, and ready to show.
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/RepoLaunch)
 
 ---
 
