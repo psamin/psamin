@@ -4,17 +4,9 @@
 
 **incoming Georgia Tech CS + EE student building AI infrastructure**
 
-Focused on AI infra and the inference side: driving the cost of compute toward zero and making LLMs as scalable as possible.
+focused on inference: driving the cost of compute toward zero and making LLMs as scalable as possible.
 
 </div>
-
----
-
-## 👨‍💻 About Me
-
-- 🧠 **Builder:** I build AI systems and the infrastructure that runs them — from model internals up to production
-- ⚡ **AI Infra:** Most interested in the inference side — serving, throughput, and efficiency — pushing the cost of compute toward zero and making LLMs as scalable as possible
-- 🔬 **Research engineering:** Working toward a research-engineering role at the intersection of ML systems and infrastructure — transformers, inference optimization, evaluation, and backend systems
 
 ---
 
@@ -51,7 +43,38 @@ AI crop-monitoring platform: detect plant disease, nutrient, and hydration issue
 
 ---
 
-### 2. Tamil Lens  
+### 2. JAX Transformer  
+![status](https://img.shields.io/badge/status-finished-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+A tiny GPT-style language model built from scratch in JAX. It learns to predict the next character in text, with attention and the core transformer parts written out by hand instead of pulled from a library.
+
+**Tech Stack:** JAX · optax · NumPy · Python
+
+**Highlights:**
+- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
+- Fully functional params with `jax.jit` / `jax.grad` / `optax` — no neural-net framework hiding the math
+- Runs on CPU and picks up a GPU/TPU automatically with no code change
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/jax-transformer)
+
+<details>
+<summary><strong>What I Built</strong></summary>
+
+- Token + positional embeddings  
+- Causal multi-head self-attention (batched, single `einsum`)  
+- GELU feed-forward MLP  
+- Pre-norm residual transformer blocks  
+- Next-token cross-entropy training loop (AdamW via optax)  
+- Character-level tokenizer + a small built-in corpus  
+- Autoregressive text generation with temperature and top-k  
+
+</details>
+
+---
+
+### 3. Tamil Lens  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
@@ -77,7 +100,7 @@ AI language-learning app: scan real-world objects for Tamil translations, transl
 
 ---
 
-### 3. MedBill  
+### 4. MedBill  
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
@@ -114,7 +137,7 @@ AI medical-bill coordination platform for law firms, providers, and funders: ext
 
 ---
 
-### 4. Fisker IT Website  
+### 5. Fisker IT Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -140,7 +163,7 @@ Official website for a local IT company — services, credibility, and client ou
 
 ---
 
-### 5. Coding for a Change Website  
+### 6. Coding for a Change Website  
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -161,37 +184,6 @@ Website for my 501(c)(3) nonprofit expanding access to coding education through 
 - Student-facing resource sections  
 - Clean responsive design  
 - Outreach-focused layout  
-
-</details>
-
----
-
-### 6. JAX Transformer  
-![status](https://img.shields.io/badge/status-finished-blue)
-![visibility](https://img.shields.io/badge/visibility-public-blue)
-
-A decoder-only (GPT-style) transformer built **from scratch in pure JAX** — no Flax/Haiku. Every layer spelled out in ~180 lines; trains a char-level LM out of the box.
-
-**Tech Stack:** JAX · optax · NumPy · Python
-
-**Highlights:**
-- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
-- Fully functional params with `jax.jit` / `jax.grad` / `optax` — no neural-net framework hiding the math
-- Runs on CPU and picks up a GPU/TPU automatically with no code change
-
-**Links:**
-- 🔗 [Repo](https://github.com/psamin/jax-transformer)
-
-<details>
-<summary><strong>What I Built</strong></summary>
-
-- Token + positional embeddings  
-- Causal multi-head self-attention (batched, single `einsum`)  
-- GELU feed-forward MLP  
-- Pre-norm residual transformer blocks  
-- Next-token cross-entropy training loop (AdamW via optax)  
-- Character-level tokenizer + a small built-in corpus  
-- Autoregressive text generation with temperature and top-k  
 
 </details>
 
