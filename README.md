@@ -2,9 +2,9 @@
 
 # hey, i'm praneeth
 
-**incoming Georgia Tech CS + EE student building AI infrastructure**
+**incoming Georgia Tech CS + EE**
 
-focused on inference: driving the cost of compute toward zero and making LLMs as scalable as possible.
+currently focused on inference: driving the cost of compute toward zero.
 
 </div>
 
