@@ -4,7 +4,7 @@
 
 **incoming Georgia Tech CS + EE**
 
-currently focused on inference: driving the cost of compute toward zero.
+currently focused on inference, ML systems, and hardware-software co-design.
 
 </div>
 
@@ -12,18 +12,54 @@ currently focused on inference: driving the cost of compute toward zero.
 
 ## 🚀 Featured Projects
 
-### 1. CropAI  
+### Transformers
+![status](https://img.shields.io/badge/status-in_progress-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+A collection of GPT-style transformer implementations and experiments in PyTorch and JAX.
+
+The PyTorch model references [Andrej Karpathy's tutorial](https://www.youtube.com/watch?v=kCc8FmEb1nY&t=1463s) and generates Shakespearean text. The JAX model is trained on OpenWebText and was built after working through *Attention Is All You Need* and DeepMind's Scaling Book.
+
+**Tech Stack:** PyTorch · JAX · Flax NNX · Optax · Orbax · XLA · Python
+
+**Highlights:**
+- Implemented causal self-attention, multi-head attention, residual blocks, layer normalization, and autoregressive generation
+- Built next-token prediction training loops in both PyTorch and JAX
+- Used `jax.jit`, automatic differentiation, Optax, and XLA for accelerated training
+- Continuing to add new transformer architectures and experiments
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/transformers)
+
+<details>
+<summary><strong>What I Built</strong></summary>
+
+- PyTorch GPT-style model trained to generate Shakespearean text
+- JAX GPT-style model trained on OpenWebText
+- Token and positional embeddings
+- Causal multi-head self-attention
+- Feed-forward neural networks
+- Pre-norm residual transformer blocks
+- Next-token cross-entropy training
+- Autoregressive generation with temperature and top-k sampling
+- Checkpointing and accelerated training with Orbax and XLA
+
+</details>
+
+---
+
+### CropAI
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI crop-monitoring platform: detect plant disease, nutrient, and hydration issues from images, with dashboards for plant health, finances, and farm operations.
+AI crop-monitoring platform that detects plant disease, nutrient deficiencies, and hydration issues from images, then generates personalized plant-health reports.
 
 **Tech Stack:** React · Flask · Python · TensorFlow · CNNs · LLM Workflows · Tailwind
 
 **Highlights:**
 - Reached **86% CNN accuracy** after model tuning
-- Combined image classification with an LLM workflow to generate personalized plant health reports
-- Placed **2nd Internationally** at TSA Software Development
+- Combined image classification with an LLM workflow to generate personalized recommendations
+- Placed **2nd internationally** at TSA Software Development
 - Turned down a **$10,000 investment offer**
 
 **Links:**
@@ -32,89 +68,31 @@ AI crop-monitoring platform: detect plant disease, nutrient, and hydration issue
 <details>
 <summary><strong>Key Features</strong></summary>
 
-- Plant disease detection from uploaded images  
-- Nutrient deficiency and hydration analysis  
-- LLM-generated recommendations  
-- Farm health dashboard  
-- Financial and operational tracking  
-- Saved results and historical tracking  
+- Plant disease detection from uploaded images
+- Nutrient deficiency and hydration analysis
+- LLM-generated health recommendations
+- Farm health and operations dashboard
+- Financial tracking
+- Saved results and historical analysis
 
 </details>
 
 ---
 
-### 2. JAX Transformer  
-![status](https://img.shields.io/badge/status-finished-blue)
-![visibility](https://img.shields.io/badge/visibility-public-blue)
-
-A GPT-style language model built from scratch in JAX, implemented after working through *Attention Is All You Need* and DeepMind's scaling laws(Chinchilla). It learns to predict the next character in text. I'm building another one to perform simple arithmetic operations soon.
-
-**Tech Stack:** JAX · optax · NumPy · Python
-
-**Highlights:**
-- Implemented multi-head **causal self-attention**, pre-norm residual blocks, and an autoregressive sampler (temperature + top-k) from first principles
-- Built the decoder-only architecture: embeddings, attention, feed-forward, residuals, and layer norm
-- Fully functional params with a next-token cross-entropy training loop using `jax.jit` / `jax.grad` / `optax`
-
-**Links:**
-- 🔗 [Repo](https://github.com/psamin/jax-transformer)
-
-<details>
-<summary><strong>What I Built</strong></summary>
-
-- Token + positional embeddings  
-- Causal multi-head self-attention (batched, single `einsum`)  
-- GELU feed-forward MLP  
-- Pre-norm residual transformer blocks  
-- Next-token cross-entropy training loop (AdamW via optax)  
-- Character-level tokenizer + a small built-in corpus  
-- Autoregressive text generation with temperature and top-k  
-
-</details>
-
----
-
-### 3. Tamil Lens  
+### MedBill
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-AI language-learning app: scan real-world objects for Tamil translations, transliterations, audio, flashcards, and quizzes. Piloting with local Tamil schools.
+AI medical-bill coordination platform for law firms, healthcare providers, and funders.
 
-**Tech Stack:** Next.js · React · Flask · Gemini Vision · SQLAlchemy · JWT Auth · Tailwind
-
-**Links:**
-- 🔗 [Repo](https://github.com/psamin/tamil-lens2.0)
-
-<details>
-<summary><strong>Features</strong></summary>
-
-- Scan real-world objects for vocabulary learning  
-- AI-generated translations and transliterations  
-- Personal word bank  
-- Flashcards and quizzes  
-- Streak tracking  
-- Stats and achievements  
-- Designed for classroom and at-home practice  
-
-</details>
-
----
-
-### 4. MedBill  
-![status](https://img.shields.io/badge/status-in_progress-blue)
-![visibility](https://img.shields.io/badge/visibility-public-blue)
-
-AI medical-bill coordination platform for law firms, providers, and funders: extract billing details, compare charges against CMS/Medicare data, and coordinate cases in a shared dashboard.
-
-**Tech Stack:** Next.js · TypeScript · Tailwind · Flask · Python · Claude API · Pydantic · CMS API · Medicare Data · GCP
+**Tech Stack:** Next.js · TypeScript · Flask · Python · Claude API · Pydantic · CMS API · Medicare Data · GCP
 
 **Highlights:**
-- Built a bill-processing workflow that extracts structured billing data from uploaded medical bill documents
-- Integrated CMS/Medicare pricing context to help compare billed charges against public reimbursement data
-- Designed role-aware coordination flows for law firms, funders, and providers so each group can review the cases, bills, and details relevant to them
-- Created dashboard views for charges, totals, bill status, extracted results, and potential billing issues
-- Improved the extraction flow to handle messy bill layouts while keeping token usage efficient
-- Deployed the project with cloud infrastructure and a separate frontend/backend setup
+- Extracts structured line items and billing data from uploaded medical documents
+- Compares charges against CMS and Medicare reimbursement data
+- Supports role-based workflows for law firms, providers, and funders
+- Handles inconsistent document layouts while keeping token usage efficient
+- Deployed with separate cloud-hosted frontend and backend services
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/medbill)
@@ -122,26 +100,55 @@ AI medical-bill coordination platform for law firms, providers, and funders: ext
 <details>
 <summary><strong>Key Features</strong></summary>
 
-- Medical bill upload and processing  
-- Line-item and total charge extraction  
-- CMS API / Medicare reference data integration  
-- Charge comparison and reimbursement context  
-- Shared coordination workflow for law firms, providers, and funders  
-- Role-based dashboard organization  
-- Structured JSON output from AI parsing  
-- Human-readable billing summaries  
-- Frontend/backend deployment setup  
-- Error handling for inconsistent bill formats  
+- Medical-bill upload and processing
+- Line-item and total-charge extraction
+- CMS and Medicare reference-data integration
+- Role-based dashboards and permissions
+- Structured JSON output from AI parsing
+- Human-readable billing summaries
+- Error handling for inconsistent bill formats
+- Cloud deployment setup
 
 </details>
 
 ---
 
-### 5. Fisker IT Website  
+### Tamil Lens
+![status](https://img.shields.io/badge/status-in_progress-blue)
+![visibility](https://img.shields.io/badge/visibility-public-blue)
+
+AI language-learning platform that lets students scan real-world objects for Tamil translations, transliterations, audio, flashcards, and quizzes.
+
+**Tech Stack:** Next.js · React · Flask · Gemini Vision · SQLAlchemy · JWT Auth · Tailwind
+
+**Highlights:**
+- Piloted with a local Tamil school serving **1,000+ students**
+- Uses computer vision to turn real-world objects into vocabulary lessons
+- Supports classroom and at-home language practice
+
+**Links:**
+- 🔗 [Repo](https://github.com/psamin/tamil-lens2.0)
+
+<details>
+<summary><strong>Key Features</strong></summary>
+
+- Object scanning for vocabulary learning
+- AI-generated translations and transliterations
+- Personal word bank
+- Flashcards and quizzes
+- Streak tracking
+- Statistics and achievements
+- Classroom and at-home practice
+
+</details>
+
+---
+
+### Fisker IT Website
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
-Official website for a local IT company — services, credibility, and client outreach.
+Official website for a local IT company, designed to present its services, credibility, and client work.
 
 **Tech Stack:** React · TypeScript · Tailwind · Flask · Vite
 
@@ -153,17 +160,17 @@ Official website for a local IT company — services, credibility, and client ou
 <details>
 <summary><strong>What I Built</strong></summary>
 
-- Responsive landing page  
-- Service sections and company overview  
-- Modern UI with clean branding  
-- Client-facing web presence  
-- Backend/contact integration  
+- Responsive landing page
+- Service and company-overview sections
+- Modern branded interface
+- Client-facing web presence
+- Backend contact integration
 
 </details>
 
 ---
 
-### 6. Coding for a Change Website  
+### Coding for a Change Website
 ![status](https://img.shields.io/badge/status-finished-blue)
 ![visibility](https://img.shields.io/badge/visibility-private-gray)
 
@@ -171,7 +178,7 @@ Website for my 501(c)(3) nonprofit expanding access to coding education through 
 
 **Tech Stack:** React · Tailwind · JavaScript
 
-**Impact:** Supported my nonprofit’s outreach, workshop visibility, and student-facing coding education programs.
+**Impact:** Supported coding programs serving **250+ students** and contributing **2,600+ volunteer hours**
 
 **Links:**
 - 🌐 [Website](https://codingforachangenpo.org)
@@ -179,32 +186,32 @@ Website for my 501(c)(3) nonprofit expanding access to coding education through 
 <details>
 <summary><strong>What I Built</strong></summary>
 
-- Nonprofit landing page  
-- Program and workshop information  
-- Student-facing resource sections  
-- Clean responsive design  
-- Outreach-focused layout  
+- Nonprofit landing page
+- Program and workshop information
+- Student-facing resources
+- Responsive interface
+- Outreach-focused design
 
 </details>
 
 ---
 
-### 7. Tasks  
+### Tasks
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-A lightweight daily planner for mapping out my goals — built around my own workflow.
+A lightweight daily planner built around my personal workflow for organizing tasks and goals.
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/tasks)
 
 ---
 
-### 8. RepoLaunch  
+### RepoLaunch
 ![status](https://img.shields.io/badge/status-in_progress-blue)
 ![visibility](https://img.shields.io/badge/visibility-public-blue)
 
-Turn unfinished ideas and repos into industry-ready projects — polish, docs, and structure to launch-ready.
+A platform for turning unfinished repositories into polished, documented, and launch-ready projects.
 
 **Links:**
 - 🔗 [Repo](https://github.com/psamin/RepoLaunch)
@@ -242,9 +249,9 @@ Turn unfinished ideas and repos into industry-ready projects — polish, docs, a
 
 ### 🤖 AI/ML & Data
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white)
 ![JAX](https://img.shields.io/badge/JAX-4c00b0?style=for-the-badge&logo=google&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-d97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285f4?style=for-the-badge&logo=google&logoColor=white)
@@ -265,3 +272,4 @@ Turn unfinished ideas and repos into industry-ready projects — polish, docs, a
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Praneeth%20Samineni-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/praneeth-samineni-745902339)
 
 </div>
+```
