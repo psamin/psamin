@@ -6,6 +6,10 @@
 
 currently focused on inference, ML systems, and hardware-software co-design.
 
+<br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=psamin&theme=github-compact&hide_border=true&area=true" width="100%" alt="Praneeth's GitHub contribution graph">
+
 </div>
 
 ---
