@@ -1,12 +1,9 @@
-```yaml
 name: Generate Contribution Animation
 
 on:
   schedule:
     - cron: "0 0 * * *"
-
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -23,10 +20,12 @@ jobs:
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: psamin
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg?palette=github-light
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish contribution snake
         uses: peaceiris/actions-gh-pages@v4
@@ -35,4 +34,3 @@ jobs:
           publish_branch: output
           publish_dir: ./dist
           force_orphan: true
-```
