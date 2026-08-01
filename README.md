@@ -2,7 +2,7 @@
 
 # hey, i'm praneeth
 
-**incoming Georgia Tech CS + EE**
+**incoming Georgia Tech (BS) CS + EE**
 
 currently focused on inference, ML systems, and hardware-software co-design.
 
