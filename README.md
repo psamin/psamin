@@ -2,7 +2,7 @@
 
 # hey, i'm praneeth
 
-**Georgia Tech (BS) CS + EE**
+**Georgia Tech (BS) CS + Math**
 
 currently focused on inference, ML systems, and hardware-software co-design.
 
