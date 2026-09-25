@@ -2,9 +2,9 @@
 
 # hey, i'm praneeth
 
-**Georgia Tech (BS) CS + Math**
+**Georgia Tech (BS) CS + Math (Intended) Double Major, Robotics Minor (Intended)**
 
-currently focused on inference, ML systems, and hardware-software co-design.
+currently focused on ml systems and robot learning
 
 </div>
 
